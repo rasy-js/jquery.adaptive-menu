@@ -1,0 +1,59 @@
+/* ==========================================================================
+   DEMO.CSS
+   ========================================================================== */
+
+body {
+  font-family: 'Roboto', sans-serif;
+
+  background: #f2f2f2;
+}
+
+.layout-center {
+  max-width: 1366px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+          align-items: center;
+
+  height: 50px;
+
+  background: #292929;
+}
+
+
+/*
+ * menu
+ */
+
+.wrapmenu {}
+
+.wrapmenu ul {
+  margin: 0;
+
+  list-style: none;
+
+}
+
+.wrapmenu li {
+  display: inline-block;
+
+  margin-left: 10px;
+}
+
+.wrapmenu li a {
+  font-size: 1rem;
+
+  text-decoration: none;
+
+  color: white;
+}

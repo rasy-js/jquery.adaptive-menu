@@ -1,0 +1,25 @@
+{
+  "name": "jquery.adaptive-menu",
+  "version": "1.0.0",
+  "description": "Jquery adaptive menu",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp-clean-css": "^2.0.10",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GREYMedia-LLC/jquery.adaptive-menu.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GREYMedia-LLC/jquery.adaptive-menu/issues"
+  },
+  "homepage": "https://github.com/GREYMedia-LLC/jquery.adaptive-menu#readme"
+}

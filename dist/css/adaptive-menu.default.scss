@@ -1,0 +1,251 @@
+/*
+ * Colors
+ */
+
+$color1: white;
+$color2: #666666;
+$color3: #d6493e;
+
+/*
+ * Menu
+ */
+
+.adaptive-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  box-sizing: border-box;
+  width: 320px;
+  height: 100%;
+  padding-top: 70px;
+  padding-bottom: 50px;
+
+  -webkit-transition-timing-function: cubic-bezier(.4,0,.2,1);
+          transition-timing-function: cubic-bezier(.4,0,.2,1);
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+  -webkit-transition-property: -webkit-transform;
+          transition-property: -webkit-transform;
+          transition-property:         transform;
+          transition-property:         transform, -webkit-transform;
+  -webkit-transform: translateX(-324px);
+      -ms-transform: translateX(-324px);
+          transform: translateX(-324px);
+  text-align: left;
+
+  background-color: $color1;
+
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  will-change: transform;
+
+  > *:first-child,
+  ul:first-of-type {
+    display: block !important;
+  }
+
+  ul:first-of-type {
+    margin: 0;
+    padding: 0;
+    li {
+      &:hover::before,
+      &:hover::after,
+      &::before,
+      &::after {
+        display: none;
+      }
+
+      display: block;
+
+      height: auto;
+      margin: 0;
+      padding: 0;
+
+      border: 0;
+
+      a {
+        font-size: 18px;
+
+        display: block;
+
+        padding: 20px;
+
+        transition: background-color .3s ease-out;
+
+        color: $color2;
+        border: 0;
+
+        &:hover {
+          background: $color3;
+        }
+        &:hover::before,
+        &:hover::after,
+        &::before,
+        &::after {
+          display: none;
+        }
+
+      }
+    }
+  }
+
+
+  &--is-visible {
+    visibility: visible;
+
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  &__open {
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+    left: 8px;
+
+    width: 50px;
+    height: 50px;
+
+    background: transparent;
+
+    &--is-hidden {
+      visibility: hidden;
+    }
+    > span {
+      position: absolute;
+      top: 46%;
+      left: -webkit-calc(50% - 19px);
+      left:         calc(50% - 19px);
+
+      width: 36px;
+      height: 4px;
+
+      -webkit-transition: all .15s ease-out;
+              transition: all .15s ease-out;
+      pointer-events: none;
+
+      background: $color1;
+
+      &:hover {
+        opacity: .7;
+      }
+
+      &::before,
+      &::after {
+        position: absolute;
+        left: 0;
+
+        width: 36px;
+        height: 4px;
+
+        content: '';
+
+        background: $color1;
+      }
+
+      &::before {
+        top: -10px;
+      }
+
+      &::after {
+        bottom: -10px;
+      }
+
+      b {
+        display: none;
+      }
+    }
+  }
+
+  &__close {
+    position: absolute;
+    z-index: 1000;
+    top: 16px;
+    left: 18px;
+
+    width: 36px;
+    height: 40px;
+
+    -webkit-transition: all .15s ease-out;
+            transition: all .15s ease-out;
+
+    opacity: .7;
+
+    &:hover {
+      -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+              transform: rotate(180deg);
+
+      opacity: 1;
+    }
+
+    &--is-hidden {
+      visibility: hidden;
+    }
+
+    > span {
+      display: none;
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      top: 18px;
+      left: 0;
+
+      width: 36px;
+      height: 6px;
+
+      content: '';
+
+      background: $color3;
+    }
+
+    &::before {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    }
+    &::after {
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    }
+  }
+
+  &__bg {
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+
+    visibility: hidden;
+
+    width: 100%;
+    height: 100%;
+
+    -webkit-transition-timing-function: cubic-bezier(.4,0,.2,1);
+            transition-timing-function: cubic-bezier(.4,0,.2,1);
+    -webkit-transition-duration: .2s;
+            transition-duration: .2s;
+    -webkit-transition-property: background-color;
+            transition-property: background-color;
+
+    background-color: transparent;
+
+    &--is-visible {
+    visibility: visible;
+
+      background-color: rgba(0,0,0,.5);
+    }
+  }
+
+}
+
+

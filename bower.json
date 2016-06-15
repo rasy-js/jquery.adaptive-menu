@@ -1,0 +1,30 @@
+{
+  "name": "jquery.adaptive-menu",
+  "version": "0.0.1",
+  "homepage": "https://github.com/GREYMedia-LLC/jquery.adaptive-menu",
+  "description": "Jquery adaptive menu",
+  "main": "dist/js/jquery.adaptive-menu.js",
+  "keywords": [
+    "adaptive-menu",
+    "adaptive",
+    "menu"
+  ],
+  "authors": [
+    "Aliaksandr Radzevich"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "package.json",
+    "gulpfile.js",
+    ".bowerrc",
+    "app",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.0.0",
+    "normalize-css": "normalize.css#^4.1.1"
+  }
+}
