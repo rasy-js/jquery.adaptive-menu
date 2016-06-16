@@ -1,1 +1,1 @@
-.adaptive-menu ul:first-of-type li a{color:#666}.adaptive-menu ul:first-of-type li a:hover{color:#E9E9E9;background:#337ab7}.adaptive-menu__close::after,.adaptive-menu__close::before{background:#337ab7}
+.adaptive-menu{background-color:#E9E9E9}.adaptive-menu ul:first-of-type li a{color:#666}.adaptive-menu ul:first-of-type li a:hover{color:#E9E9E9;background:#337ab7}.adaptive-menu__open>span,.adaptive-menu__open>span::after,.adaptive-menu__open>span::before{background:#E9E9E9}.adaptive-menu__close::after,.adaptive-menu__close::before{background:#337ab7}
