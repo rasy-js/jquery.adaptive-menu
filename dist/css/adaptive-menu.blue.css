@@ -1,0 +1,15 @@
+/*
+ * Colors
+ */
+.adaptive-menu ul:first-of-type li a {
+  color: #666666;
+}
+.adaptive-menu ul:first-of-type li a:hover {
+  color: #E9E9E9;
+  background: #337ab7;
+}
+.adaptive-menu__close::before, .adaptive-menu__close::after {
+  background: #337ab7;
+}
+
+/*# sourceMappingURL=adaptive-menu.blue.css.map */
