@@ -17,7 +17,8 @@
 
     var settings = $.extend({
       query : 768,
-      append: 'body'
+      append: 'body',
+      callback: function() {}
     },options||{});
 
     var widget = this;
@@ -34,7 +35,6 @@
             $btn_close = $('#close_menu'),
             $bg = $('#adaptive_bg');
 
-
         $(window).on('click', function (e) {
 
           if (e.target.getAttribute('id') == 'open_menu') {
@@ -43,6 +43,10 @@
             $btn_close.toggleClass('adaptive-menu__close--is-hidden');
             $bg.toggleClass('adaptive-menu__bg--is-visible');
 
+            if ($.isFunction(settings.callback)) {
+              settings.callback();
+            }
+
             return false;
           }
           else if (e.target.getAttribute('id') == 'close_menu' || e.target.getAttribute('id') == 'adaptive_bg') {
@@ -50,6 +54,10 @@
             $btn_close.toggleClass('adaptive-menu__close--is-hidden');
             $btn_open.toggleClass('adaptive-menu__open--is-hidden');
             $bg.toggleClass('adaptive-menu__bg--is-visible');
+
+            if ($.isFunction(settings.callback)) {
+              settings.callback();
+            }
 
             return false;
           }
@@ -96,6 +104,6 @@
       init();
 
     });
-  }
+  };
 
 })(jQuery, window, document);

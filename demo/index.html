@@ -13,13 +13,15 @@
 
   <script src="../app/jquery/dist/jquery.min.js"></script>
   <script src="../dist/js/jquery.adaptive-menu.min.js"></script>
-
   <script>
     $(function () {
-      $('.wrapmenu').adaptiveMenu();
+      $('.wrapmenu').adaptiveMenu({
+        callback: function() {
+          $('.text').toggleClass('is-hidden');
+        }
+      });
     });
   </script>
-
 </head>
 <body>
   <main>
@@ -43,6 +45,6 @@
       </div>
     </header>
   </main>
-
+  <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quia at nulla nostrum ab accusantium enim distinctio autem suscipit, facilis, adipisci necessitatibus voluptatem quae in aliquid nam. Eaque molestiae soluta, ipsum nisi, veniam voluptates vero ipsam dolorum ex doloribus vitae. Veritatis maiores sint similique distinctio molestias debitis tenetur aliquid totam perferendis optio sunt esse consequatur repudiandae nesciunt a obcaecati reprehenderit fugiat ducimus cumque quas accusantium iusto voluptas, nisi, exercitationem. Aperiam repudiandae magni inventore soluta vitae eius, eos accusamus necessitatibus natus magnam alias numquam voluptate aliquid, veniam fuga eaque quia esse quae molestiae corporis delectus minima optio nulla quo. Architecto animi, distinctio rem. Impedit sint sit rerum distinctio hic, vel consequatur dolor officia deleniti soluta mollitia ex consequuntur cumque minus odit in totam aperiam eligendi! Minima quo repellat autem eius earum iste molestiae, cumque, commodi vitae quasi vero officiis excepturi. Qui ea tempore nobis reprehenderit dolores quis suscipit cupiditate aut quia saepe tenetur aliquam, quibusdam, rerum dolorem veniam incidunt debitis sapiente aliquid perspiciatis, odit. Iure minima, quis fugiat tenetur, a nam quibusdam quos aperiam quo dolor optio dicta in nobis facere accusamus voluptatem, non porro magnam laboriosam ullam ab eligendi dolorem. Explicabo asperiores nihil atque sapiente corporis quae iusto repellendus at, nam, expedita fugiat in repudiandae cupiditate sunt tempora sint laborum, quaerat consequatur quidem ullam facere! Et corporis tenetur rem vero incidunt placeat, in nemo corrupti veniam ratione harum autem eaque tempora perferendis quae veritatis iure est fugit porro optio, voluptatum blanditiis voluptatibus. Eligendi, itaque sit, quidem libero ipsam sequi consequatur reiciendis praesentium ipsum accusantium id ab sed veniam sapiente modi recusandae. Deleniti commodi, quam, tempora labore beatae, numquam temporibus ipsa est, at harum molestiae expedita consequatur dolore facere ex quia quaerat ipsam totam voluptate dolorem nulla ea accusantium. Suscipit quo atque, officiis magni voluptatibus accusantium quasi veritatis omnis earum possimus perspiciatis vitae quibusdam ex unde nam qui maiores illo, sunt, delectus incidunt, autem doloremque ut. Perspiciatis explicabo dolore ipsam saepe fugit autem temporibus adipisci dignissimos culpa blanditiis omnis voluptates optio ex voluptatem, recusandae, doloremque amet ullam non accusamus. Harum est fugit natus ad quisquam nisi recusandae eaque esse quo, sunt unde illo quis enim vel delectus quae minus sint porro, nam alias. Officiis ea, quae optio ut enim animi, veritatis amet quasi dignissimos, similique voluptatum fugit consectetur iste, dolorem laborum eaque! Aut, a impedit voluptatem ipsam. Debitis cum perferendis deleniti, numquam natus ut asperiores rem obcaecati voluptas facere, rerum ipsa.</p>
 </body>
 </html>
